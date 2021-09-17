@@ -1,0 +1,12 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-footer-color: #ffffff 60%;
+  --secondary-footer-color: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-decoration-color: #212121;
+}
