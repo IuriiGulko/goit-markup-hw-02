@@ -155,11 +155,12 @@ body {
   color: var(--secondary-footer-color);
 }
 .footer-contacts-link {
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #ffffff99;
 }
 .footer-link:hover,
 .footer-link:focus {
@@ -174,6 +175,7 @@ body {
 /* ------------------filters------------------ */
 
 .filter-btn {
+  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
