@@ -8,9 +8,32 @@
   --header-text-color: #212121;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
 body {
   font-family: 'Roboto', sans-serif;
   text-decoration-color: #212121;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .logo {
@@ -55,7 +78,33 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
 }
-
+.header-container {
+  display: flex;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-contacts-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header-contacts-link {
+  margin-left: 50px;
+}
 /* ------------ hero -----------*/
 
 .hero-title {
