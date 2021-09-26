@@ -24,6 +24,8 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -109,6 +111,14 @@ body {
 }
 .header-contacts-link {
   margin-left: 50px;
+}
+.header {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: content-box;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 /* ------------ hero -----------*/
@@ -293,7 +303,7 @@ body {
 
 .footer {
   background: #2f303a;
-  padding-top: 94px;
+  padding-top: -94px;
 }
 .footer-contacts-list {
   padding-right: 215px;
@@ -302,6 +312,9 @@ body {
   margin-top: 21px;
 }
 .logo {
+}
+
+.address {
 }
 
 /* ------------------portfolio---------------- */
@@ -318,12 +331,20 @@ body {
   background: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
+  border-style: none;
+  margin-left: 8px;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--secondary-accent-color);
   background: var(--accent-color);
+}
+.filter-btn-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 95px;
+  padding-bottom: 49px;
 }
 
 /* ----------------------projects-------------------- */
@@ -336,6 +357,8 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  margin-top: 20px;
+  margin-left: 24px;
 }
 .project-text {
   font-weight: normal;
@@ -343,4 +366,22 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-top: 4px;
+  margin-left: 24px;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-item-link {
+  margin-left: 30px;
+  margin-top: 0px;
+  width: 370px;
+  height: 404px;
+  left: 215px;
+  top: 696px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
