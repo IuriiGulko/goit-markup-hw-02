@@ -110,7 +110,7 @@ body {
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
-.logo {
+.logo-header {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -140,9 +140,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-left: auto;
-  padding-right: auto;
-  padding-top: 200px;
 }
 .hero-btn {
   color: #ffffff;
@@ -162,9 +159,11 @@ body {
   background: #2f303a;
   justify-content: center;
   text-align: center;
-  height: 600px;
-}
-.hero-container {
+
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
   height: 600px;
 }
 
@@ -273,17 +272,17 @@ body {
 .team-item:not(:first-child) {
   margin-left: 30px;
 }
-.team-member-name {
-  padding-top: 30px;
-}
+
 .team-member-position {
-  padding-top: 10px;
-  padding-bottom: 30px;
+  margin-top: 10px;
 }
 .section-team {
   background-color: #f5f4fa;
 }
-
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /* --------------footer---------------- */
 .footer-logo-right {
   color: #ffffff;
@@ -303,7 +302,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff99;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .footer-link:hover,
 .footer-link:focus {
@@ -313,9 +312,11 @@ body {
 .footer {
   background: #2f303a;
   height: 252px;
+  padding-top: 60px;
+  padding-bottom: 57px;
 }
-.footer-contacts-list {
-  margin-top: 20px;
+.footer-contacts-link:last-child {
+  margin-bottom: 0px;
 }
 
 .footer-container {
@@ -323,8 +324,7 @@ body {
 }
 .logo-footer {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 0;
+  margin-bottom: 23px;
 }
 
 /* ------------------portfolio---------------- */
@@ -342,11 +342,14 @@ body {
   border-radius: 4px;
   cursor: pointer;
   border-style: none;
-  margin-left: 8px;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-right: 22px;
   padding-left: 22px;
+  margin-left: 8px;
+}
+.filter-btn1 {
+  margin-left: 0px;
 }
 
 .filter-btn:hover,
@@ -357,13 +360,13 @@ body {
 .filter-btn-list {
   display: flex;
   justify-content: center;
-  padding-top: 95px;
-  padding-bottom: 49px;
+  margin-bottom: 33px;
 }
-
+.projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* ----------------------projects-------------------- */
-.project-photo {
-}
 
 .project-title {
   font-weight: bold;
@@ -371,8 +374,6 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
-  padding-top: 20px;
-  margin-left: 24px;
 }
 .project-text {
   font-weight: normal;
@@ -381,24 +382,22 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-top: 4px;
-  margin-left: 24px;
-  margin-bottom: 20px;
 }
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 .project-item-link {
-  margin-right: 30px;
-  margin-top: 0px;
-  margin-bottom: 30px;
-  width: 370px;
-  height: 404px;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 0px;
 
   background: #ffffff;
 
   box-sizing: border-box;
+  flex-basis: calc((100% - 90px) / 3);
 }
 .project-item-link:nth-child(3n) {
   margin-right: 0;
@@ -409,4 +408,5 @@ body {
 .project-info {
   border: 1px solid #eeeeee;
   border-top-style: none;
+  padding: 20px 24px;
 }
